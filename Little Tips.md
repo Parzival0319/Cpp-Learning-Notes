@@ -29,3 +29,21 @@ CDate(int y, int m, int d, int h, int mi, int s): CTime( (cout << "LOVE" << endl
         year = y; month = m; day = d;
 }
 ```
+
+# this 指针
+##  指向当前对象自己的指针（成员函数自带，友元函数没有）
+## 核心作用
+### 1. 解决成员变量和参数重名
+```cpp
+void setAge(int age) {
+    this->age = age;
+}
+```
+### 2. 返回对象自己
+```cpp
+Student& getSelf() {
+    return *this; //链式调用常用
+}
+```
+### 3. 指向当前对象的地址
+` cout << this; // 输出对象地址 `
