@@ -47,3 +47,14 @@ Student& getSelf() {
 ```
 ### 3. 指向当前对象的地址
 ` cout << this; // 输出对象地址 `
+
+# strcmp
+头文件`：#include <cstring>`
+## 功能：按字典序比较两个 C 风格字符串，逐位对比 ASCII 码。
+##  返回值规则:
+```cpp
+设两个字符串从左到右第一个不相等字符为 c1、c2
+strcmp(s1, s2) > 0：s1 字典序更大（c1 ASCII > c2）
+strcmp(s1, s2) == 0：两个字符串完全一模一样
+strcmp(s1, s2) < 0：s1 字典序更小（c1 ASCII < c2）
+```
