@@ -1,0 +1,18 @@
+# `#include <algorithm>` C++ 的标准算法头文件
+## ✅ 里面常见函数
+
+- `std::sort`：排序（你现在正在用）
+- `std::reverse`：反转数组 / 容器
+- `std::max / std::min`：求最大最小值
+- `std::find`：查找元素
+- `std::swap`：交换两个值
+- `std::lower_bound`、`std::upper_bound`：二分查找
+## 重点：std::sort
+
+```
+std::sort(起始地址, 末尾地址, 比较函数);
+```
+
+- 第三个参数**可选**；不写默认从小到大（`<`）
+- 比较函数要求：`bool cmp(a,b)`，返回 true 代表 a 放 b 前面
+- 底层实现：不是简单快排，是**混合排序（introsort 内省排序）**，稳定性和效率都比 C 的 qsort 更好
