@@ -1,4 +1,5 @@
-# `#include <algorithm>` C++ 的标准算法头文件
+# &lt;algorithm&gt; 头文件
+`#include <algorithm>` C++ 的标准算法头文件
 ## ✅ 里面常见函数
 
 - `std::sort`：排序（你现在正在用）
